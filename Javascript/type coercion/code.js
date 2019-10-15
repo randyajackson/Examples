@@ -75,12 +75,7 @@
 // because a new object is generated for a and the value is
 // appended.
 
-
-
-
-
-
-
-
+//The == operator works on the type 
+//but === works on the reference the value of their value memory address.
 
 console.log("test");
