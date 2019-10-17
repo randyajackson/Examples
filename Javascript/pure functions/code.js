@@ -105,3 +105,29 @@ function myArrowTest(a, b, c){
 
 console.log("myArrowTest = " + myArrowTest(1, 1, 1));
 
+//pure error handling
+
+function divide(dividend, divisor) {
+    if (divisor === 0) {
+        return {
+            ok: false,
+            value: new Error("Can't divide by 0")
+        }
+    }
+    return {
+        ok: true,
+        value: dividend / divisor
+    }
+}
+
+function safeDivide(dividend, divisor) {
+    const result = divide(dividend, divisor);
+    if (result.ok) {
+        return result.value;
+    }
+    return 0;
+}
+
+//this way does not rely on system variables for catching the errors
+//internally, constructs are used to explicitly be tested for the function
+
