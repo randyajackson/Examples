@@ -36,3 +36,13 @@ if(Lili.isCute == Baby.isCute)
 {
     console.log("All the dogs are cute.");
 }
+
+//Drawbacks to factory objects:
+//No way to check where object was generated from
+//No shared behaviors between the objects
+//---------------------------------------------------------
+
+//Constructor Pattern
+
+
+
