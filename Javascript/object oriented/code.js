@@ -160,6 +160,13 @@ reallyCuteBaby.init("Lil' Baby", 9, "Labrodor");
 superCuteBaby.intro();
 reallyCuteBaby.intro();
 
+//these object oriented patterns are what the class keyword is doing under the hood
+
+//.................................................................................
+
+
+
+
 
 
 
