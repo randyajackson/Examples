@@ -133,6 +133,33 @@ console.log( Object.getPrototypeOf(bb) );
 
 header("Object Linked to Other Object Pattern");
 
+//no use of a function to create objects at all
+
+var cuteBaby = {
+
+    init: function(name, age, breed)
+          {
+                this.name = name;
+                this.age = age;
+                this.breed = breed;
+                this.isCute = "Yes by default."
+          },
+    
+    intro: function() { console.log(this.name + " is a "+ this.breed + " and is " + this.age + " years old. Is the dog cute? " + this.isCute); } 
+
+};
+
+let superCuteBaby = Object.create(cuteBaby);
+superCuteBaby.init("Lili", 9, "Weenie");
+superCuteBaby.isCute = "Very cute.";
+
+let reallyCuteBaby = Object.create(cuteBaby);
+reallyCuteBaby.init("Lil' Baby", 9, "Labrodor");
+
+
+superCuteBaby.intro();
+reallyCuteBaby.intro();
+
 
 
 
